@@ -18,14 +18,21 @@
 .hero {
     display: flex;
     padding: 50px 100px;
+    margin-top: 0;
     gap: 20px;
     color:#E5E7EB;
     font-size: 18px;
+}
+.left {
+    min-width: 400px;
 }
 .hero h1 {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 10px;
+}
+.hero img {
+    width: 350px;
 }
 button {
     background-color:#3882F6;
@@ -33,6 +40,14 @@ button {
     border-radius: 8px;
     font-size: 18px;
     color:#E5E7EB;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #3881f6e7;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
 }
 .hero button {
     border: none;
@@ -52,4 +67,55 @@ button {
 .header a {
     color: white;
     text-decoration: none;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    border: 3px #3882F6 solid;
+    border-radius: 10px;
+}
+
+.information-section {
+    color: black;
+    padding: 25px 50px;
+}
+.information-section h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+.information-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+.container-holder p{
+    width: 150px;
+    text-align: center;
+}
+.quote-section {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e7eb;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1f2937;
+}
+.quote-container {
+    margin: 0 50px;
+    padding: 0 50px;
+}
+.quote-section h4 {
+    align-self: flex-end;
+    margin-right: 100px;
 }
